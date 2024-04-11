@@ -1,7 +1,0 @@
-../rtl/Add-Compare-Unit.v
-../rtl/Add-Compare-Select-Unit.v
-../rtl/Branch-Metric-Unit.v
-../rtl/Control-Unit.v
-../rtl/Decision-Unit.v
-../rtl/Viterbi-Top-Module.v
-./Testbench.sv
