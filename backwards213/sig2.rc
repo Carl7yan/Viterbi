@@ -1,0 +1,301 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1680 549 148 96
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/carl/work/1.github_carl7yan/b213_Vit/ut/wave/tc_1_2024031317491710323364.fsdb"
+
+openDirFile -d / "" "/home/carl/work/1.github_carl7yan/b213_Vit/ut/wave/tc_1_2024031318021710324126.fsdb"
+
+openDirFile -d / "" "/home/carl/work/1.github_carl7yan/b213_Vit/backwards213/verilog.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; active file:
+activeDirFile "" "/home/carl/work/1.github_carl7yan/b213_Vit/backwards213/verilog.fsdb"
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+windowTimeUnit 1ns
+
+; waveform viewport range
+zoom 0.000000 17170.000000 1n
+cursor 13900.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 181
+; marker line index
+markerPos 185
+
+; Run Time Signal and Member
+; userBusMem member ...
+; saveRunSig name
+activeDirFile "" "/home/carl/work/1.github_carl7yan/b213_Vit/backwards213/verilog.fsdb"
+userBusMem /tb_b213/TB_U2/U1/HD1[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD2[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD3[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD4[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD5[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD6[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD7[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD8[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD9[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD10[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD11[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD12[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD13[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD14[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD15[1:0]
+userBusMem /tb_b213/TB_U2/U1/HD16[1:0]
+saveRunSig "HD[31:0]"
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+aliasmapname bCONTROL_213.NEXT_STATE
+nalias TRACEBACK		7'b0100000		NULL
+nalias WRITE_METRICS		7'b0001000		NULL
+nalias LOAD_HD		7'b0000010		NULL
+nalias OUTPUT_DX		7'b1000000		NULL
+nalias BEST_STATE		7'b0010000		NULL
+nalias ADD_HD		7'b0000100		NULL
+nalias IDLE		7'b0000001		NULL
+
+addGroup "G1"
+addGroup "control"
+activeDirFile "" "/home/carl/work/1.github_carl7yan/b213_Vit/backwards213/verilog.fsdb"
+addSignal -h 15 /tb_b213/TB_U2/U3/reset
+addSignal -h 15 -holdScope clock
+addSignal -h 15 -holdScope le
+addSignal -h 15 -holdScope ae
+addSignal -h 15 -holdScope we
+addSignal -h 15 -holdScope te
+addSignal -h 15 -holdScope oe
+addSignal -h 15 -UNSIGNED -BIN -holdScope tb_reg[2:0]
+addSignal -h 15 /tb_b213/Dx[0:0]
+addSignal -h 15 /tb_b213/TB_U2/U3/write_ptr[3:0]
+addSignal -h 15 -holdScope trace_ptr[3:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope tb_reg[2:0]
+addSignal -h 15 -holdScope min_state[2:0]
+addGroup "BMU"
+addSignal -h 15 /tb_b213/TB_U2/U1/Rx[1:0]
+addSignal -h 15 -holdScope clock
+addSignal -h 15 -holdScope le
+addSignal -h 15 -holdScope HD1[1:0]
+addSignal -h 15 -holdScope HD2[1:0]
+addSignal -h 15 -holdScope HD3[1:0]
+addSignal -h 15 -holdScope HD4[1:0]
+addSignal -h 15 -holdScope HD5[1:0]
+addSignal -h 15 -holdScope HD6[1:0]
+addSignal -h 15 -holdScope HD7[1:0]
+addSignal -h 15 -holdScope HD8[1:0]
+addSignal -h 15 -holdScope HD9[1:0]
+addSignal -h 15 -holdScope HD10[1:0]
+addSignal -h 15 -holdScope HD11[1:0]
+addSignal -h 15 -holdScope HD12[1:0]
+addSignal -h 15 -holdScope HD13[1:0]
+addSignal -h 15 -holdScope HD14[1:0]
+addSignal -h 15 -holdScope HD15[1:0]
+addSignal -h 15 -holdScope HD16[1:0]
+addSignal -h 15 -holdScope Rx[1:0]
+addGroup "metric update"
+addSignal -h 15 /tb_b213/TB_U2/U3/reset
+addSignal -h 15 -holdScope clock
+addSignal -h 15 -UNSIGNED -UDEC /tb_b213/i
+addSignal -h 15 -holdScope seq_ready
+addSignal -h 15 -UNSIGNED -UDEC /tb_b213/TB_U2/U3/symbol_count[8:0]
+addSignal -h 15 -holdScope le
+addSignal -h 15 -holdScope ae
+addSignal -h 15 -holdScope we
+addSignal -h 15 -holdScope te
+addSignal -h 15 -holdScope oe
+addSignal -h 15 -holdScope Dx[0:0]
+aliasname bCONTROL_213.NEXT_STATE
+addSignal -h 15 -UNSIGNED -HEX -holdScope NEXT_STATE[6:0]
+addSignal -h 15 -holdScope min_state[2:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope tb_reg[2:0]
+addSignal -h 15 -holdScope trace_ptr[3:0]
+addSignal -h 15 -holdScope write_ptr[3:0]
+addSignal -h 15 -holdScope A0[3:0]
+addSignal -h 15 -holdScope A1[3:0]
+addSignal -h 15 -holdScope A2[3:0]
+addSignal -h 15 -holdScope A3[3:0]
+addSignal -h 15 -holdScope A4[3:0]
+addSignal -h 15 -holdScope A5[3:0]
+addSignal -h 15 -holdScope A6[3:0]
+addSignal -h 15 -holdScope A7[3:0]
+addSignal -h 15 -holdScope write_ptr[3:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope P0[14:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope P1[14:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope P2[14:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope P3[14:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope P4[14:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope P5[14:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope P6[14:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope P7[14:0]
+addSignal -h 15 -holdScope P0_in[0:0]
+addSignal -h 15 -holdScope P1_in[0:0]
+addSignal -h 15 -holdScope P2_in[0:0]
+addSignal -h 15 -holdScope P3_in[0:0]
+addSignal -h 15 -holdScope P4_in[0:0]
+addSignal -h 15 -holdScope P5_in[0:0]
+addSignal -h 15 -holdScope P6_in[0:0]
+addSignal -h 15 -holdScope P7_in[0:0]
+addGroup "G12"
+addGroup "G14"
+addGroup "ACS0"
+addSignal -c ID_CYAN8 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC /tb_b213/TB_U2/U2/acs0_ppm_out[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope acs1_ppm_out[3:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope acs2_ppm_out[3:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope acs3_ppm_out[3:0]
+addSignal -c ID_GREEN8 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope acs4_ppm_out[3:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope acs5_ppm_out[3:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope acs6_ppm_out[3:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope acs7_ppm_out[3:0]
+addSignal -h 15 /tb_b213/TB_U2/U3/A0[3:0]
+addSignal -h 15 -holdScope A1[3:0]
+addSignal -h 15 -holdScope A2[3:0]
+addSignal -h 15 -holdScope A3[3:0]
+addSignal -h 15 -holdScope A4[3:0]
+addSignal -h 15 -holdScope A5[3:0]
+addSignal -h 15 -holdScope A6[3:0]
+addSignal -h 15 /tb_b213/TB_U2/U2/ACS1/ae
+addSignal -h 15 /tb_b213/TB_U2/U3/A0_out[3:0]
+addSignal -h 15 /tb_b213/TB_U2/U2/ACS1/acs_ppm_ina[3:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope suma[3:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope sumb[3:0]
+addSignal -h 15 -holdScope HD_ina[1:0]
+addSignal -h 15 -holdScope HD_inb[1:0]
+addSignal -h 15 /tb_b213/TB_U2/U3/write_ptr[3:0]
+addSignal -h 15 -holdScope A1_out[3:0]
+addSignal -h 15 -holdScope A2_out[3:0]
+addSignal -h 15 -holdScope A3_out[3:0]
+addSignal -h 15 -holdScope A4_out[3:0]
+addSignal -h 15 -holdScope A5_out[3:0]
+addSignal -h 15 -holdScope A6_out[3:0]
+addSignal -h 15 -holdScope A7_out[3:0]
+addSignal -h 15 -holdScope A7[3:0]
+addSignal -c ID_CYAN8 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope A0_in[3:0]
+addSignal -h 15 -holdScope A1_in[3:0]
+addSignal -h 15 -holdScope A2_in[3:0]
+addSignal -h 15 -holdScope A3_in[3:0]
+addSignal -c ID_GREEN8 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope A4_in[3:0]
+addSignal -h 15 -holdScope A5_in[3:0]
+addSignal -h 15 -holdScope A6_in[3:0]
+addSignal -h 15 -holdScope A7_in[3:0]
+addGroup "G15"
+addGroup "ACS1"
+addGroup "acs2"
+addSignal -h 15 /tb_b213/TB_U2/U2/ACS0/clock
+addSignal -h 15 /tb_b213/TB_U2/U2/ACS4/ae
+addSignal -h 15 /tb_b213/TB_U2/U3/we
+addSignal -h 15 -holdScope write_ptr[3:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_b213/TB_U2/U2/acs3_ppm_ina[3:0]
+addSignal -h 15 /tb_b213/TB_U2/U3/A3[3:0]
+addSignal -h 15 -holdScope A3_in[3:0]
+addSignal -h 15 -holdScope A3_out[3:0]
+addSignal -h 15 /tb_b213/TB_U2/U2/ACS0/HD_ina[1:0]
+addSignal -h 15 -UNSIGNED -HEX /tb_b213/TB_U2/U2/ACS4/suma[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope sumb[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope HD_ina[1:0]
+addSignal -h 15 -holdScope acs_Bx_out[0:0]
+addGroup "acs3"
+addGroup "acs4"
+addGroup "acs5"
+addGroup "acs6"
+addGroup "acs7" -e FALSE
+addGroup "Why W=4" -e FALSE
+addSignal -h 15 /tb_b213/TB_U2/U2/ae
+addSignal -c ID_PURPLE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope acs1_ppm_ina[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope HD1_ina[1:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX /tb_b213/TB_U2/U2/ACS1/suma[3:0]
+addSignal -h 15 /tb_b213/TB_U2/U2/ae
+addSignal -c ID_PURPLE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope acs1_ppm_inb[3:0]
+addSignal -h 15 -holdScope HD1_inb[1:0]
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 -UNSIGNED -HEX /tb_b213/TB_U2/U2/ACS1/sumb[3:0]
+addSignal -h 15 -UNSIGNED -UDEC /tb_b213/TB_U2/U2/acs1_ppm_out[3:0]
+addSignal -h 15 /tb_b213/TB_U2/U3/write_ptr[3:0]
+addSignal -c ID_CYAN8 -ls solid -lw 1 -h 15 -UNSIGNED -HEX -holdScope A0_in[3:0]
+addSignal -c ID_CYAN8 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC /tb_b213/TB_U2/U2/acs0_ppm_out[3:0]
+addSignal -c ID_GREEN8 -ls solid -lw 1 -h 15 -UNSIGNED -HEX /tb_b213/TB_U2/U3/A4_in[3:0]
+addSignal -c ID_GREEN8 -ls solid -lw 1 -h 15 -UNSIGNED -HEX /tb_b213/TB_U2/U2/acs4_ppm_out[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope acs0_ppm_ina[3:0]
+addSignal -h 15 -holdScope acs0_ppm_inb[3:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope acs4_ppm_ina[3:0]
+addSignal -h 15 -holdScope acs4_ppm_inb[3:0]
+addGroup "What's T=15"
+addSignal -h 15 /tb_b213/TB_U2/U3/write_ptr[3:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope P0[14:0]
+addGroup "What's N=20"
+addSignal -h 15 -UNSIGNED -UDEC /tb_b213/TB_U2/U3/symbol_count[8:0]
+addSignal -h 15 -holdScope oe
+aliasname bCONTROL_213.NEXT_STATE
+addSignal -h 15 -UNSIGNED -HEX -holdScope NEXT_STATE[6:0]
+addSignal -h 15 -holdScope write_ptr[3:0]
+addSignal -h 15 -holdScope we
+addSignal -h 15 -UNSIGNED -BIN -holdScope tb_reg[2:0]
+addSignal -h 15 -holdScope trace_ptr[3:0]
+addSignal -h 15 -holdScope te
+addSignal -h 15 -holdScope min_state[2:0]
+addSignal -h 15 -UNSIGNED -BIN -holdScope P0[14:0]
+addGroup "ACS wave"
+addSignal -h 15 /tb_b213/TB_U2/U2/clock
+addSignal -h 15 -holdScope reset
+addSignal -h 15 -holdScope ae
+addSignal -h 15 -UNSIGNED -HEX -holdScope acs0_ppm_ina[3:0]
+addSignal -h 15 -holdScope HD0_ina[1:0]
+addSignal -h 15 -holdScope acs0_ppm_inb[3:0]
+addSignal -h 15 -holdScope HD0_inb[1:0]
+addSignal -c ID_CYAN8 -ls solid -lw 1 -h 15 -UNSIGNED -UDEC -holdScope acs0_ppm_out[3:0]
+addSignal -h 15 -holdScope acs0_Bx_out[0:0]
+addGroup "ControlUnit wave"
+addSignal -h 15 /tb_b213/Rx[1:0]
+addSignal -h 15 /tb_b213/TB_U2/U3/clock
+addSignal -h 15 -holdScope reset
+addSignal -h 15 -holdScope seq_ready
+aliasname bCONTROL_213.NEXT_STATE
+addSignal -h 15 -UNSIGNED -HEX -holdScope NEXT_STATE[6:0]
+addSignal -h 15 -holdScope le
+addSignal -h 15 -holdScope ae
+addSignal -h 15 -holdScope we
+addSignal -h 15 -holdScope write_ptr[3:0]
+addSignal -h 15 -holdScope te
+addSignal -h 15 -holdScope trace_ptr[3:0]
+addSignal -h 15 -holdScope oe
+addSignal -h 15 -holdScope Dx[0:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope A0_in[3:0]
+addSignal -h 15 -holdScope P0_in[0:0]
+addSignal -h 15 -holdScope A0_out[3:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope symbol_count[8:0]
+addGroup "BMU wave"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+
+activeDirFile "" "/home/carl/work/1.github_carl7yan/b213_Vit/backwards213/verilog.fsdb"
+
+

@@ -1,0 +1,9 @@
+../rtl/params_b213.inc.v
+../rtl/bBMU_213.v
+../rtl/bACS_213.v
+../rtl/bACSU_213.v
+../rtl/bTBDECISION_213.v
+../rtl/bSYNCERR_213.v
+../rtl/bCONTROL_213.v
+../rtl/bVITERBI_213.v
+tb_b213.v
